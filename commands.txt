@@ -1,0 +1,39 @@
+psql
+\i pwd/file
+sudo su postgres
+psql - terminal enter
+sudo psql -U postgres
+
+\l -  list database
+\c db_name - connect db
+\du - role list
+psql -h localhost -p port_number -U postgres   - connect docker postgres
+\dt - table list
+\d table_name - table data . column
+\d+ table_name - table info
+CREATE DATABASE database_name OWNER role_name - create database with role.
+
+
+how to install go
+
+
+GOLANG INSTALL BINARY FILE
+sudo rm -rf /usr/local/go -- remove old GOROOT files
+sudo rm -rf /home/bobur/go -- remove old GOPATH files
+sudo tar -xzf go*.linux-amd64.tar.gz -- exact archive file
+sudo mv go /home/bobur -- move go folder for GOPATH
+sudo mv go /usr/local -- move go folder for GOROOT
+gedit ~/.profile 
+gedit ~/.bashrc
+       -- open file.
+     -- add file go settings.to end line.  --
+  
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$PATH
+
+or
+
+export PATH=$PATH:/usr/local/go/bin
+PATH=$(go env GOPATH)/bin:$PATH
+export GOROOT=/usr/local/go
