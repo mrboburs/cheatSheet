@@ -14,7 +14,7 @@ psql -h localhost -p port_number -U postgres   - connect docker postgres
 CREATE DATABASE database_name OWNER role_name - create database with role.
 
 
-how to install go
+//how to install go//.....
 
 
 GOLANG INSTALL BINARY FILE
@@ -37,3 +37,8 @@ or
 export PATH=$PATH:/usr/local/go/bin
 PATH=$(go env GOPATH)/bin:$PATH
 export GOROOT=/usr/local/go
+
+// install swagger // .....
+
+ go install github.com/swaggo/swag/cmd/swag@latest
+https://github.com/swaggo/swag is for more info
