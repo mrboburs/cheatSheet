@@ -1,4 +1,23 @@
-1.SELECT 
+psql
+\i pwd/file
+sudo su postgres
+psql - terminal enter
+sudo psql -U postgres
+
+\l -  list database
+\c db_name - connect db
+\du - role list
+psql -h localhost -p port_number -U postgres   - connect docker postgres
+\dt - table list
+\d table_name - table data . column
+\d+ table_name - table info
+CREATE DATABASE database_name OWNER role_name - create database with role.
+
+
+
+
+
+SELECT 
    first_name || ' ' || last_name,
    email
 FROM 
