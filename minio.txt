@@ -1,1 +1,14 @@
+<<<<<<< HEAD
 sudo systemctl status minio  // seeing minio status
+=======
+// installing mino by the following link
+https://www.digitalocean.com/community/tutorials/how-to-set-up-minio-object-storage-server-in-standalone-mode-on-ubuntu-20-04
+
+sudo systemctl start minio 
+sudo systemctl status minio 
+sudo systemctl stop minio 
+
+sudo nano /etc/systemd/system/minio.service
+sudo nano /etc/default/minio
+
+>>>>>>> dc70ec8bc8084118e6135d233d7e04091bd6870f

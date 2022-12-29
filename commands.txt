@@ -1,17 +1,4 @@
-psql
-\i pwd/file
-sudo su postgres
-psql - terminal enter
-sudo psql -U postgres
 
-\l -  list database
-\c db_name - connect db
-\du - role list
-psql -h localhost -p port_number -U postgres   - connect docker postgres
-\dt - table list
-\d table_name - table data . column
-\d+ table_name - table info
-CREATE DATABASE database_name OWNER role_name - create database with role.
 
 
 //how to install go//.....
@@ -42,3 +29,6 @@ export GOROOT=/usr/local/go
 
  go install github.com/swaggo/swag/cmd/swag@latest
 https://github.com/swaggo/swag is for more info
+
+// removing sth
+sudo apt-get remove sth
