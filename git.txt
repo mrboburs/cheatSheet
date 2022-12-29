@@ -1,3 +1,7 @@
 // git submodules
 git ls-files --stage projectfolder \\ showing 
 git rm -r --cached projectfolder \\ removing cached 
+
+
+// git execute
+git add . && git commit -m " update " && git push oringin main
