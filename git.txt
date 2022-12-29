@@ -1,0 +1,3 @@
+// git submodules
+git ls-files --stage projectfolder \\ showing 
+git rm -r --cached projectfolder \\ removing cached 
