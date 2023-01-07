@@ -1,4 +1,5 @@
 // git submodules
+git submodule add https://github.com/chaconinc/DbConnector
 git ls-files --stage projectfolder \\ showing 
 git rm -r --cached projectfolder \\ removing cached 
 
