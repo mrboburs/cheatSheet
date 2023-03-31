@@ -1,0 +1,28 @@
+sudo chmod 666 /var/run/docker.sock \\ get permission for access docker
+
+docker images  \\ showing the images
+docker pull <name of an images> \\ downloading an image of sth
+docker run <name of an images> \\ imageni ishga tushurish but uchib qoladi va yangitdan containerla yasab tashaydi
+
+docker ps \\ ishga tushub bugan yani ishlab turgan containerla kursatadi faqat activelarini, ps active proccess lar degani
+
+docker ps -a \\ hamma containerlani kursatadi
+ 
+docker run -it <name of an image> \\ interactiveni ishga tushuradi
+
+docker start <id name> \\ tayor kantemirdan foydalanish yani yasalgan containerni ishga tushurish
+
+docker container prune \\ ishlamay turgan kontanerlani tozalab orish
+
+docker images -q \\ returning container's id
+
+docker image rm <name of id> \\ removing images id elastik buladi
+ docker image rm $(docker image ls -q) \\ hamma images lani uchiradi
+
+ kill <number of port> \\ ps -a orqali kursa buladi
+
+ docker run -p < p orqali belgilagan port raqam masalan 4000 >:8080(containerni ichidagi port ) <image name>
+
+ docker run -d -p \\ orqa fonda ishga tushurish
+
+ docker exec -it <name of image >(randomli yaratiladi misol uchun --> festive_lederberg) sh

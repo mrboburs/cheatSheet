@@ -13,7 +13,8 @@ psql -h localhost -p port_number -U postgres   - connect docker postgres
 \d+ table_name - table info
 CREATE DATABASE database_name OWNER role_name - create database with role.
 
-
+// restore 
+pg_restore -d dbname -U bobur  backupfile
 
 
 
